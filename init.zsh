@@ -30,3 +30,8 @@ fi
 unset asdf_data
 
 source ${ASDF_DIR}/lib/asdf.sh
+
+# java home support
+if [[ -e ${ASDF_DIR}/plugins/java/set-java-home.zsh ]]; then
+  source ${ASDF_DIR}/plugins/java/set-java-home.zsh
+fi	
